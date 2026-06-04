@@ -7,15 +7,13 @@
 - `index.html` — основная страница сайта
 - `styles.css` — стили
 - `script.js` — анимации появления блоков
-- `assets/` — фото и актуальные версии CV
-- `scripts/build_cv_docx.py` — генератор `.docx`-версии CV
+- `assets/` — фото, шрифты, favicon и актуальная версия CV
 
 ## CV
 
 Актуальные файлы:
 
 - `assets/Yaroslavna-Soldatova-CV.pdf`
-- `assets/Yaroslavna-Soldatova-CV.docx`
 
 Кнопка `Скачать CV` на сайте ведет на PDF из `assets/`.
 
@@ -24,21 +22,7 @@
 - `email`
 - `LinkedIn`
 
-Мобильный номер и другие прямые контакты лучше держать в версии для ручной отправки, а не в публичном `PDF/DOCX`.
-
-## Как пересобрать CV
-
-Из корня проекта:
-
-```bash
-/Users/none/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_cv_docx.py
-```
-
-После сборки обновится файл:
-
-```text
-assets/Yaroslavna-Soldatova-CV.docx
-```
+Мобильный номер и другие прямые контакты лучше держать в версии для ручной отправки, а не в публичном `PDF`.
 
 ## Git
 
