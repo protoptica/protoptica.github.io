@@ -182,7 +182,7 @@ def main():
     meta_p.paragraph_format.space_after = Pt(10)
     meta_text = (
         "Москва, Россия  |  Москва / Remote  |  "
-        "yaroslavnaalexandrovna@gmail.com  |  +7 964 879 17 71  |  Telegram: protoptica"
+        "yaroslavnaalexandrovna@gmail.com  |  linkedin.com/in/yaroslavna-s"
     )
     meta_run = meta_p.add_run(meta_text)
     set_run_font(meta_run, size=10, color=MUTED)

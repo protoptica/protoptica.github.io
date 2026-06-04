@@ -30,11 +30,14 @@ jobs:
 
       - name: Prepare static site bundle
         run: |
-          mkdir -p dist/assets
+          mkdir -p dist/assets dist/assets/fonts
           cp index.html dist/
           cp styles.css dist/
           cp script.js dist/
-          cp -R assets/. dist/assets/
+          cp assets/favicon.svg dist/assets/
+          cp assets/yaroslava-portrait.jpeg dist/assets/
+          cp assets/Yaroslavna-Soldatova-CV.pdf dist/assets/
+          cp assets/fonts/*.ttf dist/assets/fonts/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4

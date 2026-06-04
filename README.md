@@ -19,7 +19,14 @@
 
 Кнопка `Скачать CV` на сайте ведет на PDF из `assets/`.
 
-## Как пересобрать DOCX
+Публичная версия CV для сайта должна содержать только безопасный набор контактов:
+
+- `email`
+- `LinkedIn`
+
+Мобильный номер и другие прямые контакты лучше держать в версии для ручной отправки, а не в публичном `PDF/DOCX`.
+
+## Как пересобрать CV
 
 Из корня проекта:
 
@@ -27,7 +34,7 @@
 /Users/none/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_cv_docx.py
 ```
 
-После сборки файл обновится здесь:
+После сборки обновится файл:
 
 ```text
 assets/Yaroslavna-Soldatova-CV.docx
@@ -48,6 +55,8 @@ assets/Yaroslavna-Soldatova-CV.docx
 1. Любой пуш в `main` запускает GitHub Actions.
 2. Workflow собирает статический бандл в `dist/`.
 3. GitHub Pages публикует содержимое `dist/`.
+
+В публичный бандл попадает только allowlist файлов из `assets/`, а не вся директория целиком.
 
 Если Pages еще не включен в настройках репозитория, нужно один раз выбрать:
 
